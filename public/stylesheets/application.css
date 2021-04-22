@@ -1,7 +1,65 @@
 body {
-  background-image: url("women-in-tech-background.jpg");
+  background-image: url("edited.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  color: blue;
+  background-color: #7d7a7a;
+}
+  
+.info {
+  color: #39083F;
+  font-family: "Verdana", serif;
+  text-align: justify;
+  margin: 0 20px; 
+  
+}
+#personal_photo {
+  width: 300px;
+  margin: 10px 20px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.history {
+  text-decoration: none;
+  color: #C52B05;
+  margin: 20px;
+}
+
+.history:hover {
+  text-decoration: underline;
+}
+.email {
+  text-decoration: none;
+  color: #C52B05;
+  margin: 20px;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
+
+.gitHub {
+  text-decoration: none;
+  color: #C52B05;
+}
+
+.gitHub:hover {
+  text-decoration: underline;
+}
+
+.linkedIn {
+   text-decoration: none;
+  color: #C52B05;
+}
+
+.linkedIn:hover {
+  text-decoration: underline;
+}
+
+
+.inline-block {
+  display: inline-block;
 }

@@ -1,32 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/stylesheets/application.css">
-  <title>interactive resume</title>
-</head>
-<body>
-    <h1>
+
+    <h1 class="info">
       <em>
-      About
+      ABOUT
       </em>
     </h1>
-    <p>
+    <p class="info">
       After 6 years in teaching science education, I am now transitioning to the tech industry. In the past, I've successfully
       cemented interpersonal relationships with students, enhanced department productivity, and increased student engagement.
       Excited to begin my software engineer journey and welcome any work opportunities to further hone my knowledge and
       skills.
       Detail-orientated, organized, initiative-driven and passionate about solving real-world problems, I am a quick learner
       with matching ambitions to demonstrate my capabilities.
+      <br />
       Outside of work, I am an avid and culturally-aware traveller, having lived on 3 different continents and explored 36
       countries! Thus, I have developed a love of enjoying various outdoor activities such as skiing, hiking, camping, as well
       as an appreciation of international cuisines, cooking, and languages! You will find me diving seamlessly between
       Mandarin and English among friends, with a side of Japanese conversational skills. During quieter moments, I watercolor
       paint!
-      Email: Jennifer.cc.su@gmail.com
-      GitHub: https://github.com/berryjen
-    </p>
+     
+      <br />
+     <a href= "/history" class="history">
+     <p class="history">work history 📑</p>
+    </a>
+    <br />
+    <br />
+      <strong> 
+      <a href= "Jennifer.cc.su@gmail.com"
+        target="_blank"
+        class= "email">
+        <p class="email">Work with me! 👩🏻‍💻</p>
+      </a> 
+       <br />
 
-</body>
-</html>
+       <a href = "https://github.com/berryjen/SheCodes-weather-project"
+         target="_blank"
+         class="gitHub">
+          Open source
+        </a>
+        Code by
+      <a href="https://linkedin.com/in/jennifer-s-27462888" target="_blank" class="linkedIn">
+          Jennifer Su
+      </a>
+    </strong> 
+      <br />
+    </p>
+    <br />
+
+   
+   <div class="inline-block" id="left">
+    <img src="/IMG_0822.jpg" id= "personal_photo" />
+    </div>
+    
+    
+    <div class="inline-block" id="right">
+      <button tyrpe="button" onclick="swapPlaces()">
+        Click Me!
+      </button>
+    </div>
+    <script>
+      function swapPlaces() {
+       let right= document.getElementById("right");
+       let left= document.getElementById("left");
+       rightContent= right.innerHTML;
+       leftContent= left.innerHTML;
+       left.innerHTML= rightContent;
+       right.innerHTML= leftContent;
+      }
+    </script>
