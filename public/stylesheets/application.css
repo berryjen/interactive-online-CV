@@ -10,7 +10,7 @@ body {
   color: #39083F;
   font-family: "Verdana", serif;
   text-align: justify;
-  margin: 0 20px; 
+  margin: 10px 20px; 
   
 }
 #personal_photo {
@@ -25,16 +25,17 @@ body {
 .history {
   text-decoration: none;
   color: #C52B05;
-  margin: 20px;
+  margin: 10px 20px;
 }
 
 .history:hover {
   text-decoration: underline;
 }
+
 .email {
   text-decoration: none;
   color: #C52B05;
-  margin: 20px;
+  margin: 10px 20px;
 }
 
 .email:hover {
@@ -59,6 +60,9 @@ body {
   text-decoration: underline;
 }
 
+footer {
+  text-align: center;
+}
 
 .inline-block {
   display: inline-block;
