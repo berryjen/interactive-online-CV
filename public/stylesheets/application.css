@@ -16,11 +16,11 @@ body {
 #personal_photo {
   position: relative;
   width: 200px;
-  margin: 10px 20px;
+  margin: 0 auto;
   border-radius: 50%;
 
 
-.title {
+title {
   font-weight: bold;
 }
 
