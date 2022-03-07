@@ -14,10 +14,10 @@ body {
   
 }
 #personal_photo {
-  width: 300px;
+  position: relative;
+  width: 200px;
   margin: 10px 20px;
-  border-radius: 5000px 5000px;
-}
+  border-radius: 50%;
 
 
 .title {
