@@ -1,23 +1,4 @@
 
-    <h1 class="info">
-    <div class="inline-block" id="left">
-    <img src="IMG_6027.jpeg" id= "personal_photo" />
-    </div>
-
-    <div class="inline-block" id="right">
-      <button tyrpe="button" onclick="swapPlaces()">
-        Click Me!
-      </button>
-    </div>
-    <script>
-      function swapPlaces() {
-       let right= document.getElementById("right");
-       let left= document.getElementById("left");
-       rightContent= right.innerHTML;
-       leftContent= left.innerHTML;
-       left.innerHTML= rightContent;
-       right.innerHTML= leftContent;
-      }
       <em>
       ABOUT
       </em>
@@ -65,4 +46,24 @@
     </p>
   </footer>
   <br />
+
+   <h1 class="info">
+    <div class="inline-block" id="left">
+    <img src="IMG_6027.jpeg" id= "personal_photo" />
+    </div>
+
+    <div class="inline-block" id="right">
+      <button tyrpe="button" onclick="swapPlaces()">
+        Click Me!
+      </button>
+    </div>
+    <script>
+      function swapPlaces() {
+       let right= document.getElementById("right");
+       let left= document.getElementById("left");
+       rightContent= right.innerHTML;
+       leftContent= left.innerHTML;
+       left.innerHTML= rightContent;
+       right.innerHTML= leftContent;
+      }
     </script>
