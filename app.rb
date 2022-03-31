@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'github_api'
 
 get '/' do
   erb :index
@@ -10,8 +11,8 @@ end
 
 get '/repo' do
     repos= [
-     { :name => "JS weather", :URL => "https://github.com/berryjen/SheCodes-weather-project"},
-     { :name => "react weather", :URL => "https://github.com/berryjen/weather-react"}
+     { :name => "JS weather", :url => "https://github.com/berryjen/SheCodes-weather-project"},
+     { :name => "react weather", :url => "https://github.com/berryjen/weather-react"}
       ]
     erb :github, { :locals => { :name => "jen", :repos => repos} }
 end
@@ -20,5 +21,6 @@ end
 # rename 'repo' 
 # use repos = Github::Repos.new :user => 'berryjen'
 get '/projects' do
-   projects = Github:: projects.new :user => 'berryjen', :name => 'URL'
-   projects.
+  repos= Github.repos.list user: 'berryjen'
+  erb :github, { :locals => { :name => "jen", :repos => repos} }
+end
