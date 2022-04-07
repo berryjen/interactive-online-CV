@@ -3,6 +3,6 @@ Hello, <%= name %>
 </h2>
 <ol>
 <% repos.each do |n| %>
-<li><a href="<%= n[:url] %>" target="_blank"><%= n[:name] %></a></li>
+<li><a href="<%= n[:html_url] %>" target="_blank"><%= n[:name] %><h5>original push <%= n[:pushed_at] %></h5> <h5> last update <%= n[:updated_at] %></h5> <h5> created on <%= n[:created_at] %></h5></a></li>
 <% end %>
 </ol>
