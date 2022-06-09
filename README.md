@@ -11,7 +11,7 @@ h) Short learning curve
 
 In particular a), c), f), g) & h) were of importance to my learning stage at this point as I am a junior navagating the word of RoR and needed something that was beginner friendly! 
 
-Obtained GitHub repos using Curl and created a new route in app/repo in app.erb
+Obtained GitHub repos using Curl and created a new route in app/repo in github.erb
 
 Used rackup config.ru to start server
  
